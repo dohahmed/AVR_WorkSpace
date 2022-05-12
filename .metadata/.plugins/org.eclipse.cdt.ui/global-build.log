@@ -1,0 +1,655 @@
+20:50:35 **** Build of configuration Debug for project First_project ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: First_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,First_project.map -mmcu=atmega32 -o "First_project.elf"  ./main.o   
+d:/tools/imt tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [First_project.elf] Error 1
+20:51:11 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:16: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: First_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,First_project.map -mmcu=atmega32 -o "First_project.elf"  ./main.o   
+Finished building target: First_project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S First_project.elf  >"First_project.lss"
+Finished building: First_project.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex First_project.elf  "First_project.hex"
+Finished building: First_project.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 First_project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     142 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:18:00 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:16: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:20: warning: implicit declaration of function 'delay'
+Finished building: ../main.c
+ 
+Building target: First_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,First_project.map -mmcu=atmega32 -o "First_project.elf"  ./main.o   
+./main.o: In function `main':
+../main.c:20: undefined reference to `delay'
+make: *** [First_project.elf] Error 1
+21:26:19 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:16: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:22: warning: implicit declaration of function 'delay'
+Finished building: ../main.c
+ 
+Building target: First_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,First_project.map -mmcu=atmega32 -o "First_project.elf"  ./main.o   
+./main.o: In function `main':
+../main.c:22: undefined reference to `delay'
+make: *** [First_project.elf] Error 1
+21:32:05 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:16:25: warning: utils/delay.h: No such file or directory
+../main.c:18: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:24: warning: implicit declaration of function '_delay_ms'
+Finished building: ../main.c
+ 
+Building target: First_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,First_project.map -mmcu=atmega32 -o "First_project.elf"  ./main.o   
+./main.o: In function `main':
+../main.c:24: undefined reference to `_delay_ms'
+make: *** [First_project.elf] Error 1
+21:32:49 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:16:25: warning: utils/delay.h: No such file or directory
+../main.c:18: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:25: warning: implicit declaration of function '_delay_ms'
+Finished building: ../main.c
+ 
+Building target: First_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,First_project.map -mmcu=atmega32 -o "First_project.elf"  ./main.o   
+./main.o: In function `main':
+../main.c:25: undefined reference to `_delay_ms'
+../main.c:27: undefined reference to `_delay_ms'
+make: *** [First_project.elf] Error 1
+21:33:08 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:16:
+d:/tools/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:18: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: First_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,First_project.map -mmcu=atmega32 -o "First_project.elf"  ./main.o   
+Finished building target: First_project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S First_project.elf  >"First_project.lss"
+Finished building: First_project.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex First_project.elf  "First_project.hex"
+Finished building: First_project.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 First_project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3492 bytes (10.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:34:51 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:14:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../main.c:16:
+d:/tools/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:18: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: First_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,First_project.map -mmcu=atmega32 -o "First_project.elf"  ./main.o   
+Finished building target: First_project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S First_project.elf  >"First_project.lss"
+Finished building: First_project.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex First_project.elf  "First_project.hex"
+Finished building: First_project.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 First_project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3492 bytes (10.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:35:44 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:14:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../main.c:16:
+d:/tools/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:18: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: First_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,First_project.map -mmcu=atmega32 -o "First_project.elf"  ./main.o   
+Finished building target: First_project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S First_project.elf  >"First_project.lss"
+Finished building: First_project.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex First_project.elf  "First_project.hex"
+Finished building: First_project.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 First_project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3492 bytes (10.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:36:17 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:14:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../main.c:16:
+d:/tools/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:18: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: First_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,First_project.map -mmcu=atmega32 -o "First_project.elf"  ./main.o   
+Finished building target: First_project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S First_project.elf  >"First_project.lss"
+Finished building: First_project.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex First_project.elf  "First_project.hex"
+Finished building: First_project.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 First_project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3492 bytes (10.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:09:59 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:14:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../main.c:16:
+d:/tools/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:18: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: First_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,First_project.map -mmcu=atmega32 -o "First_project.elf"  ./main.o   
+Finished building target: First_project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S First_project.elf  >"First_project.lss"
+Finished building: First_project.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex First_project.elf  "First_project.hex"
+Finished building: First_project.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 First_project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3492 bytes (10.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:12:29 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 First_project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3492 bytes (10.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:12:29 **** Build of configuration Debug for project Led_animation ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:14:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../main.c:16:
+d:/tools/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:18: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: Led_animation.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Led_animation.map -mmcu=atmega32 -o "Led_animation.elf"  ./main.o   
+Finished building target: Led_animation.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Led_animation.elf  >"Led_animation.lss"
+Finished building: Led_animation.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Led_animation.elf  "Led_animation.hex"
+Finished building: Led_animation.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Led_animation.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3300 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:13:56 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 First_project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3492 bytes (10.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:13:57 **** Incremental Build of configuration Debug for project Led_animation ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:14:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../main.c:16:
+d:/tools/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:18: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: Led_animation.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Led_animation.map -mmcu=atmega32 -o "Led_animation.elf"  ./main.o   
+Finished building target: Led_animation.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Led_animation.elf  >"Led_animation.lss"
+Finished building: Led_animation.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Led_animation.elf  "Led_animation.hex"
+Finished building: Led_animation.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Led_animation.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3316 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:15:18 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 First_project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3492 bytes (10.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:15:18 **** Incremental Build of configuration Debug for project Led_animation ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:14:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../main.c:16:
+d:/tools/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:18: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: Led_animation.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Led_animation.map -mmcu=atmega32 -o "Led_animation.elf"  ./main.o   
+Finished building target: Led_animation.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Led_animation.elf  >"Led_animation.lss"
+Finished building: Led_animation.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Led_animation.elf  "Led_animation.hex"
+Finished building: Led_animation.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Led_animation.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3328 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:16:36 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 First_project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3492 bytes (10.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:16:37 **** Incremental Build of configuration Debug for project Led_animation ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:14:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../main.c:16:
+d:/tools/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:18: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: Led_animation.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Led_animation.map -mmcu=atmega32 -o "Led_animation.elf"  ./main.o   
+Finished building target: Led_animation.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Led_animation.elf  >"Led_animation.lss"
+Finished building: Led_animation.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Led_animation.elf  "Led_animation.hex"
+Finished building: Led_animation.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Led_animation.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3316 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:17:12 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 First_project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3492 bytes (10.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:17:13 **** Incremental Build of configuration Debug for project Led_animation ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:14:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../main.c:16:
+d:/tools/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:18: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: Led_animation.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Led_animation.map -mmcu=atmega32 -o "Led_animation.elf"  ./main.o   
+Finished building target: Led_animation.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Led_animation.elf  >"Led_animation.lss"
+Finished building: Led_animation.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Led_animation.elf  "Led_animation.hex"
+Finished building: Led_animation.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Led_animation.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3616 bytes (11.0% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:29:08 **** Incremental Build of configuration Debug for project First_project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 First_project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3492 bytes (10.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:29:09 **** Incremental Build of configuration Debug for project Led_animation ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:14:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../main.c:16:
+d:/tools/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:18: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: Led_animation.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Led_animation.map -mmcu=atmega32 -o "Led_animation.elf"  ./main.o   
+Finished building target: Led_animation.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Led_animation.elf  >"Led_animation.lss"
+Finished building: Led_animation.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Led_animation.elf  "Led_animation.hex"
+Finished building: Led_animation.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Led_animation.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3292 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
